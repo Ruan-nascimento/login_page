@@ -43,11 +43,14 @@ section.login div button{
     
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 0%;
 
     transition: .2s ease;
 
- 
+}
+
+button{
+    animation: out .2s ease;
 }
 
 section.login div button:hover{
