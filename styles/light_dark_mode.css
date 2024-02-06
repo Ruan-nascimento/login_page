@@ -1,8 +1,26 @@
 :root{
 
     --primary: #010101;
-    --text: #f2f3f3;
+    --second: #202020;
+    --text: #ffffff;
+
+    --text-sign: #ffffff;
 
     --others: #1919b9;
+    --others-hover: #11115a;
+    --light: rgba(228, 214, 214, 0.562);
+
+}
+
+.light{
+
+    --primary: #fff;
+    --second: #c4c0c0;
+    --text: #000;
+    --text-sign: #ffffff;
+
+    --others: #1919b9;
+    --others-hover: #11115a;
+    --light: rgba(32, 31, 31, 0.562);
 
 }

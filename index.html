@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="light">
 
 <head>
     <meta charset="UTF-8">
@@ -33,27 +33,38 @@
 
             <section class="login">
 
+
                 <h1 id="sign">sign in</h1>
 
-                <form action="#" method="post">
+                <form action="#" method="post" id="formulary">
 
-                    <div>
-                        <label for="email" id="label_user">user name</label>
-                        <input type="email" name="email" id="email">
+                    <div id="box-email">
+
+                        <label for="email" class="label_user label">user name</label>
+                       
+                        <input type="email" name="email" id="email" class="email input"
+                        placeholder="Enter Email" required>
+                        <i class="bi bi-envelope-fill"></i>
+
                     </div>
 
-                    <div>
-                        <label for="password" id="label_password">password</label>
-                        <input type="password" name="password" id="password">
+                    <div id="box-password">
+
+                        <label for="password" class="label_password label">password</label>
+                        
+                        <input type="password" name="password" id="password" class="password input" placeholder="Enter Password" required>
+                        <i class="bi bi-file-lock2-fill"></i>
+                        
+
                     </div>
 
                     <a href="#" class="forgot">forgot password?</a>
 
-                    <input type="submit" value="SIGN IN">
+                    <input type="submit" value="SIGN IN" id="sgn">
 
                 </form>
 
-                <a href="#" class="sign_up">don't have an account? sign up.</a>
+                <a href="#" class="sign_up">don't have an account? <b>sign up.</b></a>
 
             </section>
 

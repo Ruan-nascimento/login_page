@@ -5,23 +5,178 @@ main{
 
 main div{
     display: grid;
-    grid-template-columns: 35% 1fr;
+    grid-template-columns: 30% 1fr;
     height: 100%;
 
 }
 
 section.login{
-    padding: 5%;
+    padding: 8%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
+
 
 }
 
+section.login #sign{
+    text-transform: capitalize;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+
+}
+
+
+section.login #formulary{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+
+}
+
+#formulary #box-email{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#formulary #box-password{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#formulary .label{
+    text-transform: capitalize;
+    margin-bottom: 6px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+#formulary .input{
+    border: 2px solid var(--light);
+    border-radius: 5px;
+    padding: 10px 13px;
+    padding-left: 40px;
+    background-color: var(--primary);
+    outline: none;
+    width: 100%;
+
+    transition: .2s ease-in-out background-color, .2s ease-in-out padding;
+
+}
+
+
+#formulary .input:hover{
+    background-color: var(--second);
+    transition: .2s ease-in-out background-color;
+}
+
+#formulary .input:focus{
+    border-color: var(--text);
+    transition: .2s ease-in-out padding;
+    padding-left: 13px;
+}
+
+#formulary .input:focus~i{
+    display: none;
+}
+
+
+#formulary #box-email i,
+#formulary #box-password i{
+    color: var(--others);
+    transition: 0.1s ease-in-out color;
+    position: absolute;
+    background-color: transparent;
+    top: 50%;
+    left: 5%;
+}
+
+#formulary i:hover{
+    color: var(--others-hover);
+    transition: 0.1s ease-in-out color;
+}
+
+#formulary .forgot{
+    margin-top: -20px;
+    margin-right: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: end;
+    color: var(--light);
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    transition: .3s ease text-decoration, .2s ease color;
+}
+
+#formulary .forgot:hover{
+    color: var(--text);
+    text-decoration: underline;
+    transition: .3s ease text-decoration, .2s ease color;
+}
+
+
+#formulary #sgn{
+    outline: none;
+    border: none;
+    background-color: var(--others);
+    padding: 10px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: var(--text-sign);
+
+    transition: .3s ease-in-out background-color;
+    
+}
+
+#formulary #sgn:hover{
+    background-color: var(--others-hover);
+    transition: .3s ease-in-out background-color;
+}
+
+.login .sign_up{
+    font-size: 1.4;
+    font-weight: 400;
+    text-transform: capitalize;
+    bottom: 30px;
+
+
+}
+
+.login .sign_up b:hover{
+    color: var(--others);
+    text-decoration: underline;
+    transform: scale(1.01);
+}
 
 
 
 
 section.img{
     background-color: gray;
+}
+
+
+@media (max-width: 860px){
+    main div{
+        grid-template-columns: 50% 1fr;
+    
+    }
+}
+
+@media (max-width: 623px){
+    main div{
+        grid-template-columns: 1fr;
+    }
+
+    section.img{
+        display: none;
+    }
 }
