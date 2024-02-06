@@ -9,6 +9,7 @@
     --others: #1919b9;
     --others-hover: #11115a;
     --light: rgba(228, 214, 214, 0.562);
+    --light-opacity: rgba(228, 214, 214, 0.2);
 
 }
 
@@ -22,5 +23,10 @@
     --others: #1919b9;
     --others-hover: #11115a;
     --light: rgba(32, 31, 31, 0.562);
+    --light-opacity: rgba(32, 31, 31, .2);
 
+}
+
+.light button{
+    animation: out .2s ease forwards;
 }
