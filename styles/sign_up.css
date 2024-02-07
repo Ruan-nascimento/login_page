@@ -10,6 +10,7 @@ main #first-quadro{
 }
 
 section#sign_up{
+    border-right: solid 10px var(--others);
     padding: 8%;
  
 
@@ -138,6 +139,7 @@ section#sign_up div .tracker{
     background-color: var(--others);
     color: var(--text-sign);
     font-weight: 600;
+    cursor: pointer;
     
     transition: .2s ease background-color;
 }
@@ -162,7 +164,38 @@ section#sign_up div .tracker{
 
 
 
-section#img{background-color: aqua;}
+section#img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: var(--background); 
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: cover;
+}
+
+section#img .title, section.img span, section.img .text{
+    background-color: transparent;
+}
+
+section#img .title{
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+section#img .text{
+    margin-top: -20px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 100%;
+    background-color: var(--primary);
+    padding: 2px 8px;
+    border-radius: 5px;
+
+}
 
 
 
@@ -185,7 +218,6 @@ section#img{background-color: aqua;}
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-
 }
 
 @media (max-width:463px){

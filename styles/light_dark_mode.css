@@ -11,6 +11,8 @@
     --light: rgba(32, 31, 31, 0.562);
     --light-opacity: rgba(32, 31, 31, .4);
 
+    --background: url(../assets/svg/background-light.svg);
+
 }
 
 .dark button{
@@ -29,5 +31,7 @@
     --others-hover: #11115a;
     --light: rgba(228, 214, 214, 0.562);
     --light-opacity: rgba(228, 214, 214, 0.2);
+
+    --background: url(../assets/svg/background-dark.svg);
 
 }

@@ -13,6 +13,7 @@ main div{
 section.login{
     padding: 8%;
     display: flex;
+    border-right: solid 10px var(--others);
     flex-direction: column;
     justify-content: space-evenly;
 }
@@ -197,8 +198,39 @@ section.login #formulary{
 
 
 section.img{
-    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: var(--background); 
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: cover;
 }
+
+section.img .title, section.img span, section.img .text{
+    background-color: transparent;
+}
+
+section.img .title{
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+section.img .text{
+    margin-top: -20px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 100%;
+    background-color: var(--primary);
+    padding: 2px 8px;
+    border-radius: 5px;
+
+}
+
+
 
 
 @media (max-width: 860px){
@@ -206,6 +238,17 @@ section.img{
         grid-template-columns: 50% 1fr;
     
     }
+
+    section.img .title{
+        font-size: 4rem;
+    }
+
+    section.img .text{
+        margin-top: -13px;
+        font-size: 80%;
+    }
+
+
 }
 
 @media (max-width: 623px){
