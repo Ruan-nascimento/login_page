@@ -15,8 +15,6 @@ section.login{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
-
 }
 
 section.login #sign{
@@ -29,13 +27,13 @@ section.login #sign{
 section.login div.button{
     position: relative;
     display: flex;
-    width: 60px;
-    height: 30px;
+    width: 40px;
+    height: 20px;
 }
 
 section.login div button{
-    height: 30px;
-    width: 30px;
+    height: 100%;
+    width: 50%;
     border-radius: 50%;
     background-color: var(--others);
     border: 1px solid var(--text);
@@ -54,13 +52,13 @@ button{
 }
 
 section.login div button:hover{
-    box-shadow: 0 0 12px 10px var(--light-opacity);
+    box-shadow: 0 0 4px 4px var(--light-opacity);
     transition: .2s ease;
 }
 
 section.login div .tracker{
-    height: 30px;
-    width: 60px;
+    height: inherit;
+    width: inherit;
     border-radius: 9999999px;
     border: 1px solid var(--text);
 }

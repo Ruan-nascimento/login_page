@@ -1,0 +1,196 @@
+main{
+    height: 100vh;
+    width: 100%;
+}
+
+main #first-quadro{
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    height: 100%;
+}
+
+section#sign_up{
+    padding: 8%;
+ 
+
+}
+
+section#sign_up div#quadro{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section#sign_up .text1{
+    text-transform: capitalize;
+    font-size: 4rem;
+}
+
+section#sign_up div.button{
+    position: relative;
+    display: flex;
+    width: 40px;
+    height: 20px;
+}
+
+section#sign_up div button{
+    height: 100%;
+    width: 50%;
+    border-radius: 50%;
+    background-color: var(--others);
+    border: 1px solid var(--text);
+    cursor: pointer;
+    
+    position: absolute;
+    top: 0;
+    left: 0%;
+
+    transition: .2s ease;
+
+}
+
+button{
+    animation: out .2s ease;
+}
+
+section#sign_up div button:hover{
+    box-shadow: 0 0 4px 4px var(--light-opacity);
+    transition: .2s ease;
+}
+
+section#sign_up div .tracker{
+    height: inherit;
+    width: inherit;
+    border-radius: 9999999px;
+    border: 1px solid var(--text);
+
+}
+
+#quadro #formulary{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+#quadro #formulary #pass{
+    display: flex;
+    gap: 10px;
+    max-width: 100%;
+}
+
+#quadro #formulary #pass input{
+    width: 100%;
+}
+
+#quadro #formulary .box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+#quadro #formulary label{
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--text);
+}
+
+#quadro #formulary .box input{
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 3px solid var(--light);
+    outline: none;
+
+    transition: padding .2s ease, background-color .2s ease;
+}
+
+#quadro #formulary .box input:hover{
+    background-color: var(--second);
+}
+
+#quadro #formulary .box input:focus{
+    border-color: var(--text);
+    padding-left: 15px;
+
+}
+
+#quadro #formulary .box input:focus~i{
+    display: none;
+}
+
+#quadro #formulary .box i{
+    position: absolute;
+    background-color: transparent;
+    top: 48%;
+    left: 2%;
+    color: var(--others);
+}
+
+
+#formulary input.sign_button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--others);
+    color: var(--text-sign);
+    font-weight: 600;
+    
+    transition: .2s ease background-color;
+}
+#formulary input.sign_button:hover{
+    background-color: var(--others-hover);
+}
+
+#quadro a.sign_go{
+    width: 50%;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+#quadro a.sign_go b{
+    transition: .2s ease;
+}
+
+#quadro a.sign_go b:hover{
+    text-decoration: underline;
+    color: var(--others-hover);
+}
+
+
+
+section#img{background-color: aqua;}
+
+
+
+@media (max-width:1011px){
+    main #first-quadro{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:803px){
+    main #first-quadro{
+        grid-template-columns: 1fr;
+    }
+
+    section#img{
+        display: none;
+    }
+
+    #quadro #formulary #pass{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width:463px){
+    #quadro #formulary #pass{
+        display: flex;
+        flex-direction: column;
+    }
+}
