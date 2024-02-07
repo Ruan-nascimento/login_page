@@ -1,19 +1,5 @@
+
 :root{
-
-    --primary: #010101;
-    --second: #202020;
-    --text: #ffffff;
-
-    --text-sign: #ffffff;
-
-    --others: #1919b9;
-    --others-hover: #11115a;
-    --light: rgba(228, 214, 214, 0.562);
-    --light-opacity: rgba(228, 214, 214, 0.2);
-
-}
-
-.light{
 
     --primary: #fff;
     --second: #e4dfdf;
@@ -27,6 +13,21 @@
 
 }
 
-.light button{
+.dark button{
     animation: in .2s ease forwards;
+}
+
+.dark{
+
+    --primary: #010101;
+    --second: #202020;
+    --text: #ffffff;
+
+    --text-sign: #ffffff;
+
+    --others: #1919b9;
+    --others-hover: #11115a;
+    --light: rgba(228, 214, 214, 0.562);
+    --light-opacity: rgba(228, 214, 214, 0.2);
+
 }
